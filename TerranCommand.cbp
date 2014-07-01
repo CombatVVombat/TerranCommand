@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TerranCommand" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TerranCommand" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wmain" />
+					<Add option="-std=c++11" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="D:/Programming/Libraries/SFML-2.1/include" />
+				</Compiler>
+				<Linker>
+					<Add library="D:\Programming\Libraries\SFML-2.1\lib\libsfml-graphics-d.a" />
+					<Add library="D:\Programming\Libraries\SFML-2.1\lib\libsfml-window-d.a" />
+					<Add library="D:\Programming\Libraries\SFML-2.1\lib\libsfml-system-d.a" />
+					<Add directory="D:/Programming/Libraries/SFML-2.1/lib" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='cmd /c xcopy /s &quot;.\resources&quot; &quot;$(TARGET_OUTPUT_DIR)\resources\&quot;' />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/TerranCommand" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wmain" />
+					<Add option="-std=c++11" />
+					<Add option="-Wall" />
+					<Add directory="include" />
+					<Add directory="D:/Programming/Libraries/SFML-2.1/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="D:\Programming\Libraries\SFML-2.1\lib\libsfml-graphics.a" />
+					<Add library="D:\Programming\Libraries\SFML-2.1\lib\libsfml-window.a" />
+					<Add library="D:\Programming\Libraries\SFML-2.1\lib\libsfml-system.a" />
+					<Add directory="D:/Programming/Libraries/SFML-2.1/lib" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='cmd /c xcopy /s &quot;.\resources&quot; &quot;$(TARGET_OUTPUT_DIR)resources\&quot;' />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="source/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
