@@ -26,7 +26,7 @@
 					<Add directory="D:/Programming/Libraries/SFML-2.1/lib" />
 				</Linker>
 				<ExtraCommands>
-					<Add after='cmd /c xcopy /s &quot;.\resources&quot; &quot;$(TARGET_OUTPUT_DIR)\resources\&quot;' />
+					<Add after='cmd /c xcopy /e /y &quot;.\resources&quot; &quot;$(TARGET_OUTPUT_DIR)\resources\&quot;' />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -51,7 +51,7 @@
 					<Add directory="D:/Programming/Libraries/SFML-2.1/lib" />
 				</Linker>
 				<ExtraCommands>
-					<Add after='cmd /c xcopy /s &quot;.\resources&quot; &quot;$(TARGET_OUTPUT_DIR)resources\&quot;' />
+					<Add after='cmd /c xcopy /e /y &quot;.\resources&quot; &quot;$(TARGET_OUTPUT_DIR)\resources\&quot;' />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -59,6 +59,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="include/engine/engine.hpp" />
+		<Unit filename="include/engine/eventhandler.hpp" />
+		<Unit filename="source/engine/engine.cpp" />
+		<Unit filename="source/engine/eventhandler.cpp" />
 		<Unit filename="source/main.cpp" />
 		<Extensions>
 			<code_completion />

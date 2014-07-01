@@ -1,6 +1,6 @@
 # depslib dependency file v1.0
-1404170636 source:d:\programming\localgit\terrancommand\source\main.cpp
-	<SFML/Graphics.hpp>
+1404176106 source:d:\programming\localgit\terrancommand\source\main.cpp
+	"engine/engine.hpp"
 
 1374391808 d:\programming\libraries\sfml-2.1\include\sfml\window.hpp
 	<SFML/System.hpp>
@@ -335,4 +335,29 @@
 	<SFML/System/String.hpp>
 	<string>
 	<vector>
+
+1404177730 source:d:\programming\localgit\terrancommand\source\engine\engine.cpp
+	"engine/engine.hpp"
+
+1404177841 d:\programming\localgit\terrancommand\include\engine\engine.hpp
+	"engine\render\display.hpp"
+
+1404176114 d:\programming\localgit\terrancommand\include\engine\renderwindow\displayenvironment.hpp
+	<SFML/Graphics.hpp>
+	"engine/renderwindow/displaysetting.hpp"
+
+1404175398 d:\programming\localgit\terrancommand\include\engine\renderwindow\displaysetting.hpp
+	"SFML/Graphics.hpp"
+
+1404175867 source:d:\programming\localgit\terrancommand\source\engine\renderwindow\displayenvironment.cpp
+	"engine/renderwindow/displayenvironment.hpp"
+
+1404175748 source:d:\programming\localgit\terrancommand\source\engine\renderwindow\displaysetting.cpp
+	"engine/renderwindow/DisplaySetting.hpp"
+
+1404177497 d:\programming\localgit\terrancommand\include\engine\render\display.hpp
+	<SFML/Graphics.hpp>
+
+1404177496 source:d:\programming\localgit\terrancommand\source\engine\render\display.cpp
+	"engine/render/display.hpp"
 

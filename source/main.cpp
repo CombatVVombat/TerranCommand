@@ -1,8 +1,10 @@
-#include <SFML/Graphics.hpp>
+
+#include "engine/engine.hpp"
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(800,600), "Terran Command");
+    Engine engine;  // fire it up
+
     sf::CircleShape shape(100.0f);
     shape.setFillColor(sf::Color::Green);
 
