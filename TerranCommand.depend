@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1404338374 source:d:\programming\localgit\terrancommand\source\main.cpp
+1404338810 source:d:\programming\localgit\terrancommand\source\main.cpp
 	<SFML/Graphics.hpp>
 	"engine/engine.hpp"
 	"renderer/tcrenderer/tcrenderer.hpp"
@@ -396,4 +396,7 @@
 
 1404338263 d:\programming\localgit\terrancommand\include\eventhandler\tchandler\tchandler.hpp
 	"eventhandler/abstract/eventhandler.hpp"
+
+1404338492 source:d:\programming\localgit\terrancommand\source\renderer\abstract\renderer.cpp
+	"renderer/abstract/renderer.hpp"
 
