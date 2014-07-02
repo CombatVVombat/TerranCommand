@@ -8,3 +8,9 @@ Engine::Engine(std::unique_ptr<Renderer> r, std::unique_ptr<EventHandler> eh)
 
 
 }
+
+void Engine::DoSomeTemporaryShit()
+{
+    renderer->Render();
+    eventHandler->HandleEvents();
+}
