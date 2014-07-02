@@ -1,10 +1,10 @@
 #include "engine/engine.hpp"
 
-Engine::Engine()
+Engine::Engine(std::unique_ptr<Renderer> r, std::unique_ptr<EventHandler> eh)
 :
-    renderWindow(sf::VideoMode(1024,768,32), "Terran Command", sf::Style::Default)  // create the main window
+    renderer(std::move(r)),
+    eventHandler(std::move(eh))
 {
-
 
 
 }

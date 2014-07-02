@@ -1,15 +1,14 @@
 #ifndef EVENTHANDLER_HPP_INCLUDED
 #define EVENTHANDLER_HPP_INCLUDED
 
+#include <SFML/Graphics.hpp>
+
 class EventHandler
 {
 public:
-    EventHandler(sf::RenderWindow renderWindow);
-
-    void PollEvents();
+    virtual void HandleEvents() = 0;
 
 private:
-    sf::Event event;
 };
 
 

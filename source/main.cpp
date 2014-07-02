@@ -1,14 +1,18 @@
 
+#include <SFML/Graphics.hpp>
 #include "engine/engine.hpp"
+#include "renderer/tcrenderer/tcrenderer.hpp"
+#include "eventhandler/tchandler/tchandler.hpp"
 
 int main()
 {
-    Engine engine;  // fire it up
+    // make necessary subsystems for the engine
+    std::unique_ptr<Renderer> tcRenderer(new TCRenderer);
+    std::unique_ptr<EventHandler> tcEventHandler(new TCHandler);
+    // fire it up
+    Engine engine(std::move(tcRenderer), std::move(tcEventHandler));
 
-    sf::CircleShape shape(100.0f);
-    shape.setFillColor(sf::Color::Green);
-
-    while(window.isOpen())
+    /*while(window.isOpen())
     {
         sf::Event event;
         while(window.pollEvent(event))
@@ -20,7 +24,7 @@ int main()
         window.clear();
         window.draw(shape);
         window.display();
-    }
+    }*/
     return 0;
 }
 

@@ -1,6 +1,9 @@
 # depslib dependency file v1.0
-1404176106 source:d:\programming\localgit\terrancommand\source\main.cpp
+1404338374 source:d:\programming\localgit\terrancommand\source\main.cpp
+	<SFML/Graphics.hpp>
 	"engine/engine.hpp"
+	"renderer/tcrenderer/tcrenderer.hpp"
+	"eventhandler/tchandler/tchandler.hpp"
 
 1374391808 d:\programming\libraries\sfml-2.1\include\sfml\window.hpp
 	<SFML/System.hpp>
@@ -336,11 +339,13 @@
 	<string>
 	<vector>
 
-1404177730 source:d:\programming\localgit\terrancommand\source\engine\engine.cpp
+1404337856 source:d:\programming\localgit\terrancommand\source\engine\engine.cpp
 	"engine/engine.hpp"
 
-1404177841 d:\programming\localgit\terrancommand\include\engine\engine.hpp
-	"engine\render\display.hpp"
+1404338310 d:\programming\localgit\terrancommand\include\engine\engine.hpp
+	<memory>
+	"renderer/abstract/renderer.hpp"
+	"eventhandler/abstract/eventhandler.hpp"
 
 1404176114 d:\programming\localgit\terrancommand\include\engine\renderwindow\displayenvironment.hpp
 	<SFML/Graphics.hpp>
@@ -360,4 +365,35 @@
 
 1404177496 source:d:\programming\localgit\terrancommand\source\engine\render\display.cpp
 	"engine/render/display.hpp"
+
+1404260236 d:\programming\localgit\terrancommand\include\renderer\renderer.hpp
+
+1404261196 source:d:\programming\localgit\terrancommand\source\engine\eventhandler.cpp
+	"engine/eventhandler.hpp"
+
+1404261183 d:\programming\localgit\terrancommand\include\engine\eventhandler.hpp
+	<SFML/Graphics.hpp>
+
+1404252564 source:d:\programming\localgit\terrancommand\source\renderer\renderer.cpp
+	"renderer/renderer.hpp"
+
+1404261874 source:d:\programming\localgit\terrancommand\source\renderer\tcrenderer\tcrenderer.cpp
+	"renderer/tcrenderer/tcrenderer.hpp"
+
+1404338026 d:\programming\localgit\terrancommand\include\renderer\tcrenderer\tcrenderer.hpp
+	"renderer/abstract/renderer.hpp"
+
+1404260236 d:\programming\localgit\terrancommand\include\renderer\abstract\renderer.hpp
+
+1404338290 source:d:\programming\localgit\terrancommand\source\eventhandler\abstract\eventhandler.cpp
+	"eventhandler/abstract/eventhandler.hpp"
+
+1404261183 d:\programming\localgit\terrancommand\include\eventhandler\abstract\eventhandler.hpp
+	<SFML/Graphics.hpp>
+
+1404338300 source:d:\programming\localgit\terrancommand\source\eventhandler\tchandler\tchandler.cpp
+	"eventhandler/tchandler/tchandler.hpp"
+
+1404338263 d:\programming\localgit\terrancommand\include\eventhandler\tchandler\tchandler.hpp
+	"eventhandler/abstract/eventhandler.hpp"
 
