@@ -1,9 +1,7 @@
 #ifndef EVENTHANDLER_HPP_INCLUDED
 #define EVENTHANDLER_HPP_INCLUDED
 
-#include <SFML/Graphics.hpp>
-
-class EventHandler
+class IEventHandler
 {
 public:
     virtual void HandleEvents() = 0;

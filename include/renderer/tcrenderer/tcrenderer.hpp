@@ -3,19 +3,14 @@
 
 #include <memory>
 #include <SFML/Graphics.hpp>
-#include "renderer/abstract/renderer.hpp"
+#include "renderer/abstract/Irenderer.hpp"
 
 
-class TCRenderer : public Renderer
+class TCRenderer : public IRenderer
 {
 public:
-    TCRenderer(std::unique_ptr<sf::RenderWindow> rW);
-    void Render();
-
-private:
-    std::unique_ptr<sf::RenderWindow> renderWindow;
+    TCRenderer();
+    void Render(sf::RenderWindow &rt);
 };
-
-
 
 #endif // TCRENDERER_HPP_INCLUDED

@@ -62,15 +62,15 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="include/engine/engine.hpp" />
-		<Unit filename="include/eventhandler/abstract/eventhandler.hpp" />
-		<Unit filename="include/eventhandler/tchandler/tchandler.hpp" />
-		<Unit filename="include/renderer/abstract/renderer.hpp" />
+		<Unit filename="include/eventhandler/abstract/Ieventhandler.hpp" />
+		<Unit filename="include/eventhandler/windoweventhandler/windoweventhandler.hpp" />
+		<Unit filename="include/renderer/abstract/Irenderer.hpp" />
 		<Unit filename="include/renderer/tcrenderer/tcrenderer.hpp" />
 		<Unit filename="source/engine/engine.cpp" />
-		<Unit filename="source/eventhandler/abstract/eventhandler.cpp" />
-		<Unit filename="source/eventhandler/tchandler/tchandler.cpp" />
+		<Unit filename="source/eventhandler/abstract/Ieventhandler.cpp" />
+		<Unit filename="source/eventhandler/windoweventhandler/windoweventhandler.cpp" />
 		<Unit filename="source/main.cpp" />
-		<Unit filename="source/renderer/abstract/renderer.cpp" />
+		<Unit filename="source/renderer/abstract/Irenderer.cpp" />
 		<Unit filename="source/renderer/tcrenderer/tcrenderer.cpp" />
 		<Extensions>
 			<code_completion />
