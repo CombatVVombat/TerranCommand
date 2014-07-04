@@ -1,20 +1,19 @@
-#ifndef TCHANDLER_HPP_INCLUDED
-#define TCHANDLER_HPP_INCLUDED
+#ifndef WINDOWEVENTHANDLER_HPP_INCLUDED
+#define WINDOWEVENTHANDLER_HPP_INCLUDED
 
 #include <memory>
 #include <SFML/Graphics.hpp>
 #include "eventhandler/abstract/Ieventhandler.hpp"
 
-class WindowEventHandler : public IEventHandler
+namespace tc
 {
-public:
-    WindowEventHandler(std::shared_ptr<sf::Window> w);
-    void HandleEvents();
-
-private:
-    std::shared_ptr<sf::Window> window;
-};
-
+    class WindowEventHandler : public tc::IEventHandler
+    {
+    public:
+        void HandleEvents(sf::Window &window);
+    };
+}
 
 
-#endif // TCHANDLER_HPP_INCLUDED
+
+#endif // WINDOWEVENTHANDLER_HPP_INCLUDED

@@ -1,14 +1,18 @@
-#ifndef EVENTHANDLER_HPP_INCLUDED
-#define EVENTHANDLER_HPP_INCLUDED
+#ifndef IEVENTHANDLER_HPP_INCLUDED
+#define IEVENTHANDLER_HPP_INCLUDED
 
-class IEventHandler
+#include <SFML/Window.hpp>
+
+namespace tc
 {
-public:
-    virtual void HandleEvents() = 0;
+    class IEventHandler
+    {
+    public:
+        virtual void HandleEvents(sf::Window &window) = 0;
 
-private:
-};
+    private:
+    };
+}
 
 
-
-#endif // EVENTHANDLER_HPP_INCLUDED
+#endif // IEVENTHANDLER_HPP_INCLUDED

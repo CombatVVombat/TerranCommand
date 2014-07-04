@@ -1,15 +1,15 @@
 #include "engine/engine.hpp"
 
-Engine::Engine(std::unique_ptr<IRenderer> r, std::unique_ptr<IEventHandler> eh, std::shared_ptr<sf::RenderWindow> rW)
+tc::Engine::Engine(std::unique_ptr<tc::sys::Window> wS, std::unique_ptr<tc::sys::Graphics> gS)
 :
-    renderer(std::move(r)),
-    eventHandler(std::move(eh)),
-    renderWindow(std::move(rW))
+    windowSystem(std::move(wS)),
+    graphicsSystem(std::move(gS))
 {
 }
 
-void Engine::DoSomeTemporaryShit()
+void tc::Engine::DoSomeTemporaryShit()
 {
-    renderer->Render(*renderWindow);
-    eventHandler->HandleEvents();
+    graphicsSystem->Render(windowSystem->GetWindow());      // draws to the target
+    graphicsSystem->Display(windowSystem->GetWindow());     // displays what was drawn
+    windowSystem->Update();
 }

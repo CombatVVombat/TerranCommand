@@ -1,14 +1,18 @@
-#ifndef RENDERER_HPP_INCLUDED
-#define RENDERER_HPP_INCLUDED
+#ifndef IRENDERER_HPP_INCLUDED
+#define IRENDERER_HPP_INCLUDED
 
 #include <SFML/Graphics.hpp>
+#include "renderer/abstract/IrenderQueue.hpp"
 
-class IRenderer
+namespace tc
 {
-public:
-    virtual void Render(sf::RenderWindow &rt) = 0;  // should this be sf::RenderTarget?  Hard to do, because it doesnt make display() virtual
-};
+    class IRenderer
+    {
+    public:
+        virtual void Render(IRenderQueue &renderQueue, sf::RenderTarget &rt) = 0;
+    };
+}
 
 
 
-#endif // RENDERER_HPP_INCLUDED
+#endif // IRENDERER_HPP_INCLUDED

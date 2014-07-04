@@ -2,19 +2,25 @@
 #include <SFML/Graphics.hpp>
 #include "engine/engine.hpp"
 #include "eventhandler/windoweventhandler/windoweventhandler.hpp"
-#include "renderer/tcrenderer/tcrenderer.hpp"
+#include "renderer/tcrenderer/renderer.hpp"
+
+// Random Thoughts //
+// Currently windoweventhandler only deals with events which directly effect the window.  Other events should be passed (as messages?) to other systems to handle.
+
+
 
 int main()
 {
-    // make necessary subsystems for the engine
-    std::shared_ptr<sf::RenderWindow> renderWindow(new sf::RenderWindow(sf::VideoMode(1024,768,32), "Terran Command")); // its event handler needs a pointer to it...hence std::shared_ptr
-    std::unique_ptr<IEventHandler> windowEventHandler(new WindowEventHandler(renderWindow));
-    std::unique_ptr<IRenderer> tcRenderer(new TCRenderer);
+    // start components to pass to the engine
+    std::unique_ptr<sf::RenderWindow> aRenderWindow(new sf::RenderWindow(sf::VideoMode(1024,768,32), "Terran Command", sf::Style::Close | sf::Style::Titlebar));
+    std::unique_ptr<tc::IRenderer> aRenderer(new tc::Renderer);
+
+    std::unique_ptr<tc::sys::Graphics> graphicsSystem( new tc::sys::Graphics( std::move(aRenderer)) );
+    std::unique_ptr<tc::sys::Window> windowSystem( new tc::sys::Window( std::move(aRenderWindow)) );
 
     // fire it up
     // Note: because of the move semantics, engine takes ownership of these components.  The pointers are no longer valid in main() scope
-    Engine engine(std::move(tcRenderer), std::move(windowEventHandler), std::move(renderWindow));
-
+    tc::Engine engine(std::move(windowSystem), std::move(graphicsSystem));
     engine.DoSomeTemporaryShit();
 
     return 0;

@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1404429530 source:d:\programming\localgit\terrancommand\source\main.cpp
+1404505658 source:d:\programming\localgit\terrancommand\source\main.cpp
 	<memory>
 	<SFML/Graphics.hpp>
 	"engine/engine.hpp"
 	"eventhandler/windoweventhandler/windoweventhandler.hpp"
-	"renderer/tcrenderer/tcrenderer.hpp"
+	"renderer/tcrenderer/renderer.hpp"
 
 1374391808 d:\programming\libraries\sfml-2.1\include\sfml\window.hpp
 	<SFML/System.hpp>
@@ -340,13 +340,16 @@
 	<string>
 	<vector>
 
-1404430064 source:d:\programming\localgit\terrancommand\source\engine\engine.cpp
+1404506419 source:d:\programming\localgit\terrancommand\source\engine\engine.cpp
 	"engine/engine.hpp"
 
-1404430055 d:\programming\localgit\terrancommand\include\engine\engine.hpp
+1404506535 d:\programming\localgit\terrancommand\include\engine\engine.hpp
 	<memory>
+	"systems/graphics/graphics.hpp"
+	"systems/window/window.hpp"
 	"renderer/abstract/Irenderer.hpp"
 	"eventhandler/abstract/Ieventhandler.hpp"
+	"game/world.hpp"
 
 1404176114 d:\programming\localgit\terrancommand\include\engine\renderwindow\displayenvironment.hpp
 	<SFML/Graphics.hpp>
@@ -378,10 +381,10 @@
 1404252564 source:d:\programming\localgit\terrancommand\source\renderer\renderer.cpp
 	"renderer/renderer.hpp"
 
-1404429559 source:d:\programming\localgit\terrancommand\source\renderer\tcrenderer\tcrenderer.cpp
+1404432460 source:d:\programming\localgit\terrancommand\source\renderer\tcrenderer\tcrenderer.cpp
 	"renderer/tcrenderer/tcrenderer.hpp"
 
-1404430102 d:\programming\localgit\terrancommand\include\renderer\tcrenderer\tcrenderer.hpp
+1404432470 d:\programming\localgit\terrancommand\include\renderer\tcrenderer\tcrenderer.hpp
 	<memory>
 	<SFML/Graphics.hpp>
 	"renderer/abstract/Irenderer.hpp"
@@ -738,22 +741,83 @@
 	<string>
 	<vector>
 
-1404429602 source:d:\programming\localgit\terrancommand\source\eventhandler\windoweventhandler\windoweventhandler.cpp
+1404505538 source:d:\programming\localgit\terrancommand\source\eventhandler\windoweventhandler\windoweventhandler.cpp
 	"eventhandler/windoweventhandler/windoweventhandler.hpp"
 
-1404430094 d:\programming\localgit\terrancommand\include\eventhandler\windoweventhandler\windoweventhandler.hpp
+1404505416 d:\programming\localgit\terrancommand\include\eventhandler\windoweventhandler\windoweventhandler.hpp
 	<memory>
 	<SFML/Graphics.hpp>
 	"eventhandler/abstract/Ieventhandler.hpp"
 
-1404430044 d:\programming\localgit\terrancommand\include\renderer\abstract\irenderer.hpp
+1404503483 d:\programming\localgit\terrancommand\include\renderer\abstract\irenderer.hpp
 	<SFML/Graphics.hpp>
+	"renderer/abstract/IrenderQueue.hpp"
 
-1404429959 d:\programming\localgit\terrancommand\include\eventhandler\abstract\ieventhandler.hpp
+1404505526 d:\programming\localgit\terrancommand\include\eventhandler\abstract\ieventhandler.hpp
+	<SFML/Window.hpp>
 
 1404430077 source:d:\programming\localgit\terrancommand\source\eventhandler\abstract\ieventhandler.cpp
 	"eventhandler/abstract/Ieventhandler.hpp"
 
-1404429998 source:d:\programming\localgit\terrancommand\source\renderer\abstract\irenderer.cpp
+1404438008 source:d:\programming\localgit\terrancommand\source\renderer\abstract\irenderer.cpp
 	"renderer/abstract/Irenderer.hpp"
+
+1404431359 source:d:\programming\localgit\terrancommand\source\renderer\abstract\irenderqueue.cpp
+	"renderer/abstract/Irenderqueue.hpp"
+
+1404503536 d:\programming\localgit\terrancommand\include\renderer\abstract\irenderqueue.hpp
+
+1404432260 d:\programming\localgit\terrancommand\include\renderer\abstract\irenderhash.hpp
+
+1404503605 d:\programming\localgit\terrancommand\include\renderer\tcrenderer\renderer.hpp
+	<memory>
+	<SFML/Graphics.hpp>
+	"renderer/abstract/Irenderer.hpp"
+	"renderer/tcrenderer/renderqueue.hpp"
+
+1404503573 d:\programming\localgit\terrancommand\include\renderer\tcrenderer\renderitem.hpp
+	<memory>
+	<SFML/Graphics.hpp>
+	"renderer/tcrenderer/sortkey.hpp"
+
+1404503582 d:\programming\localgit\terrancommand\include\renderer\tcrenderer\sortkey.hpp
+	<stdint.h>
+
+1404503623 source:d:\programming\localgit\terrancommand\source\renderer\tcrenderer\renderer.cpp
+	"renderer/tcrenderer/renderer.hpp"
+
+1404503552 d:\programming\localgit\terrancommand\include\renderer\tcrenderer\renderqueue.hpp
+	"renderer/tcrenderer/renderitem.hpp"
+
+1404503631 source:d:\programming\localgit\terrancommand\source\renderer\tcrenderer\renderitem.cpp
+	"renderer/tcrenderer/renderitem.hpp"
+
+1404503637 source:d:\programming\localgit\terrancommand\source\renderer\tcrenderer\sortkey.cpp
+	"renderer/tcrenderer/sortkey.hpp"
+
+1404503458 d:\programming\localgit\terrancommand\include\game\world.hpp
+	<SFML/Graphics.hpp>
+
+1404487655 source:d:\programming\localgit\terrancommand\source\game\world.cpp
+	"game/world.hpp"
+
+1404504432 d:\programming\localgit\terrancommand\include\systems\abstract\isystem.hpp
+
+1404505906 source:d:\programming\localgit\terrancommand\source\systems\graphics\graphics.cpp
+	"systems/graphics/graphics.hpp"
+
+1404506334 d:\programming\localgit\terrancommand\include\systems\graphics\graphics.hpp
+	<SFML/Graphics.hpp>
+	"systems/abstract/Isystem.hpp"
+	"renderer/abstract/Irenderer.hpp"
+	"renderer/tcrenderer/renderqueue.hpp"
+
+1404506472 source:d:\programming\localgit\terrancommand\source\systems\window\window.cpp
+	"systems/window/window.hpp"
+
+1404506485 d:\programming\localgit\terrancommand\include\systems\window\window.hpp
+	<memory>
+	<SFML/Window.hpp>
+	"systems/abstract/Isystem.hpp"
+	"eventhandler/windoweventhandler/windoweventhandler.hpp"
 
