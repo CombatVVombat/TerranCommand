@@ -342,12 +342,10 @@
 1404506592 source:d:\programming\localgit\terrancommand\source\engine\engine.cpp
 	"engine/engine.hpp"
 
-1404509404 d:\programming\localgit\terrancommand\include\engine\engine.hpp
+1404514505 d:\programming\localgit\terrancommand\include\engine\engine.hpp
 	<memory>
 	"systems/graphics/graphics.hpp"
 	"systems/window/window.hpp"
-	"systems/graphics/renderer/abstract/Irenderer.hpp"
-	"eventhandler/abstract/Ieventhandler.hpp"
 	"game/world.hpp"
 
 1404176114 d:\programming\localgit\terrancommand\include\engine\renderwindow\displayenvironment.hpp
@@ -867,4 +865,18 @@
 	<memory>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics.hpp>
+
+1404514472 d:\programming\localgit\terrancommand\include\systems\window\eventhandler\windoweventhandler\windoweventhandler.hpp
+	<memory>
+	<SFML/Graphics.hpp>
+	"systems/window/eventhandler/abstract/Ieventhandler.hpp"
+
+1404514429 source:d:\programming\localgit\terrancommand\source\systems\window\eventhandler\abstract\ieventhandler.cpp
+	"systems/window/eventhandler/abstract/Ieventhandler.hpp"
+
+1404510035 d:\programming\localgit\terrancommand\include\systems\window\eventhandler\abstract\ieventhandler.hpp
+	<SFML/Window.hpp>
+
+1404514461 source:d:\programming\localgit\terrancommand\source\systems\window\eventhandler\windoweventhandler\windoweventhandler.cpp
+	"systems/window/eventhandler/windoweventhandler/windoweventhandler.hpp"
 

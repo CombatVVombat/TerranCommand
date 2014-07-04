@@ -4,8 +4,6 @@
 #include <memory>
 #include "systems/graphics/graphics.hpp"
 #include "systems/window/window.hpp"
-#include "systems/graphics/renderer/abstract/Irenderer.hpp"
-#include "eventhandler/abstract/Ieventhandler.hpp"
 #include "game/world.hpp"
 
 namespace tc

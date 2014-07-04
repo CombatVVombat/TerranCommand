@@ -3,7 +3,7 @@
 
 #include <memory>
 #include <SFML/Graphics.hpp>
-#include "eventhandler/abstract/Ieventhandler.hpp"
+#include "systems/window/eventhandler/abstract/Ieventhandler.hpp"
 
 namespace tc
 {

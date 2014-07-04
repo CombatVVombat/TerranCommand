@@ -1,4 +1,4 @@
-#include "eventhandler/windoweventhandler/windoweventhandler.hpp"
+#include "systems/window/eventhandler/windoweventhandler/windoweventhandler.hpp"
 
 void tc::WindowEventHandler::HandleEvents(sf::Window &window) const
 {
