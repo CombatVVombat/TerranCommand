@@ -3,7 +3,7 @@
 
 #include <memory>
 #include <SFML/Graphics.hpp>
-#include "renderer/tcrenderer/sortkey.hpp"
+#include "systems/graphics/renderer/tcrenderer/sortkey.hpp"
 
 namespace tc
 {

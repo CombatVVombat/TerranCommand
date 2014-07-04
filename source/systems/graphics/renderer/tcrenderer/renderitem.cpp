@@ -1,4 +1,4 @@
-#include "renderer/tcrenderer/renderitem.hpp"
+#include "systems/graphics/renderer/tcrenderer/renderitem.hpp"
 
 tc::RenderItem::RenderItem(std::shared_ptr<sf::Drawable> d, std::shared_ptr<sf::RenderStates> rS)
 :

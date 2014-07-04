@@ -15,8 +15,8 @@ namespace tc
         public:
             Graphics(std::unique_ptr<tc::IRenderer> r);
             void Update();
-            void Display(sf::RenderWindow &rW);
-            void Render(sf::RenderTarget &rT);
+            void Display(sf::RenderWindow &rW) const;
+            void Render(sf::RenderTarget &rT) const;
 
         private:
             std::unique_ptr<tc::IRenderer> renderer;

@@ -5,10 +5,10 @@
 
 namespace tc
 {
-    class IEventHandler
+    class IEventHandler : sf::NonCopyable
     {
     public:
-        virtual void HandleEvents(sf::Window &window) = 0;
+        virtual void HandleEvents(sf::Window &window) const = 0;
 
     private:
     };

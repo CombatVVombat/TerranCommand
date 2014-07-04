@@ -5,7 +5,7 @@
 
 namespace tc
 {
-    class World
+    class World : sf::NonCopyable
     {
     private:
 

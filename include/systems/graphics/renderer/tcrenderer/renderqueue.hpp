@@ -1,7 +1,7 @@
 #ifndef RENDERQUEUE_HPP_INCLUDED
 #define RENDERQUEUE_HPP_INCLUDED
 
-#include "renderer/tcrenderer/renderitem.hpp"
+#include "systems/graphics/renderer/tcrenderer/renderitem.hpp"
 
 namespace tc
 {

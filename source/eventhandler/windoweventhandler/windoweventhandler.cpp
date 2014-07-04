@@ -1,6 +1,6 @@
 #include "eventhandler/windoweventhandler/windoweventhandler.hpp"
 
-void tc::WindowEventHandler::HandleEvents(sf::Window &window)
+void tc::WindowEventHandler::HandleEvents(sf::Window &window) const
 {
     while(window.isOpen())
     {

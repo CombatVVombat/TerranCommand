@@ -12,12 +12,12 @@ void tc::sys::Graphics::Update()
     //Display();
 }
 
-void tc::sys::Graphics::Display(sf::RenderWindow &rW)
+void tc::sys::Graphics::Display(sf::RenderWindow &rW) const
 {
     rW.display();
 }
 
-void tc::sys::Graphics::Render(sf::RenderTarget &rT)
+void tc::sys::Graphics::Render(sf::RenderTarget &rT) const
 {
     renderer->Render(opaque, rT);
     renderer->Render(translucent, rT);

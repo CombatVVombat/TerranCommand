@@ -5,7 +5,7 @@ namespace tc
 {
     namespace sys
     {
-        class ISystem
+        class ISystem : sf::NonCopyable
         {
             virtual void Update() = 0;
         };

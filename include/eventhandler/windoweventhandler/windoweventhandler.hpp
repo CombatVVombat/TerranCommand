@@ -10,7 +10,7 @@ namespace tc
     class WindowEventHandler : public tc::IEventHandler
     {
     public:
-        void HandleEvents(sf::Window &window);
+        void HandleEvents(sf::Window &window) const;
     };
 }
 

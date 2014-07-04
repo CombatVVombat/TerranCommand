@@ -1,4 +1,4 @@
-#include "renderer/tcrenderer/sortkey.hpp"
+#include "systems/graphics/renderer/tcrenderer/sortkey.hpp"
 
 bool tc::SortKey::operator < (const SortKey &rhs) const
 {

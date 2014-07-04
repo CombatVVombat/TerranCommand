@@ -4,13 +4,13 @@
 #include <memory>
 #include "systems/graphics/graphics.hpp"
 #include "systems/window/window.hpp"
-#include "renderer/abstract/Irenderer.hpp"
+#include "systems/graphics/renderer/abstract/Irenderer.hpp"
 #include "eventhandler/abstract/Ieventhandler.hpp"
 #include "game/world.hpp"
 
 namespace tc
 {
-    class Engine
+    class Engine : sf::NonCopyable
     {
     private:
         std::unique_ptr<tc::sys::Window> windowSystem;

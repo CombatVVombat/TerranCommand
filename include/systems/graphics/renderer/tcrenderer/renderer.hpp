@@ -3,8 +3,8 @@
 
 #include <memory>
 #include <SFML/Graphics.hpp>
-#include "renderer/abstract/Irenderer.hpp"
-#include "renderer/tcrenderer/renderqueue.hpp"
+#include "systems/graphics/renderer/abstract/Irenderer.hpp"
+#include "systems/graphics/renderer/tcrenderer/renderqueue.hpp"
 
 // Renderer takes a render queue (full of individual render items) and draws them to the given render target.  That's it.  No moar.
 
@@ -13,7 +13,8 @@ namespace tc
     class Renderer : public tc::IRenderer
     {
     public:
-        void Render(tc::IRenderQueue &renderQueue, sf::RenderTarget &rt);
+        void Render(const tc::IRenderQueue &renderQueue, sf::RenderTarget &rt) const;
+        static std::unique_ptr<tc::Renderer> Factory();
     };
 }
 
