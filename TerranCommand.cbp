@@ -9,14 +9,16 @@
 			<Target title="Debug">
 				<Option output="bin/Debug/TerranCommand" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
-				<Option type="0" />
+				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
 				<Compiler>
 					<Add option="-Wmain" />
 					<Add option="-pedantic" />
 					<Add option="-std=c++11" />
 					<Add option="-Wall" />
 					<Add option="-g" />
+					<Add option="-DDEBUG" />
 					<Add directory="include" />
 					<Add directory="lib/SFML-2.1/include" />
 				</Compiler>
@@ -42,6 +44,7 @@
 					<Add option="-pedantic" />
 					<Add option="-std=c++11" />
 					<Add option="-Wall" />
+					<Add option="-DNDEBUG" />
 					<Add directory="include" />
 					<Add directory="lib/SFML-2.1/include" />
 				</Compiler>
@@ -71,6 +74,8 @@
 		<Unit filename="include/systems/graphics/renderer/tcrenderer/renderitem.hpp" />
 		<Unit filename="include/systems/graphics/renderer/tcrenderer/renderqueue.hpp" />
 		<Unit filename="include/systems/graphics/renderer/tcrenderer/sortkey.hpp" />
+		<Unit filename="include/systems/graphics/texture/texturecache.hpp" />
+		<Unit filename="include/systems/graphics/texture/texturemetadata.hpp" />
 		<Unit filename="include/systems/window/eventhandler/abstract/Ieventhandler.hpp" />
 		<Unit filename="include/systems/window/eventhandler/windoweventhandler/windoweventhandler.hpp" />
 		<Unit filename="include/systems/window/renderwindow.hpp" />
@@ -84,6 +89,8 @@
 		<Unit filename="source/systems/graphics/renderer/tcrenderer/renderer.cpp" />
 		<Unit filename="source/systems/graphics/renderer/tcrenderer/renderitem.cpp" />
 		<Unit filename="source/systems/graphics/renderer/tcrenderer/sortkey.cpp" />
+		<Unit filename="source/systems/graphics/texture/texturecache.cpp" />
+		<Unit filename="source/systems/graphics/texture/texturemetadata.cpp" />
 		<Unit filename="source/systems/window/eventhandler/abstract/Ieventhandler.cpp" />
 		<Unit filename="source/systems/window/eventhandler/windoweventhandler/windoweventhandler.cpp" />
 		<Unit filename="source/systems/window/renderwindow.cpp" />

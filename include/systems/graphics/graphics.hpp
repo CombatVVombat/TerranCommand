@@ -5,6 +5,7 @@
 #include "systems/abstract/Isystem.hpp"
 #include "renderer/abstract/Irenderer.hpp"
 #include "renderer/tcrenderer/renderqueue.hpp"
+#include "systems/graphics/texture/texturecache.hpp"
 
 namespace tc
 {
@@ -20,6 +21,7 @@ namespace tc
 
         private:
             std::unique_ptr<tc::IRenderer> renderer;
+            tc::TextureCache textureCache;
             tc::RenderQueue opaque;
             tc::RenderQueue translucent;
         };

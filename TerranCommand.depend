@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1404513862 source:d:\programming\localgit\terrancommand\source\main.cpp
+1404600491 source:d:\programming\localgit\terrancommand\source\main.cpp
 	<memory>
 	"engine/engine.hpp"
 	"systems/window/renderwindow.hpp"
@@ -800,14 +800,15 @@
 
 1404509445 d:\programming\localgit\terrancommand\include\systems\abstract\isystem.hpp
 
-1404510183 source:d:\programming\localgit\terrancommand\source\systems\graphics\graphics.cpp
+1404611691 source:d:\programming\localgit\terrancommand\source\systems\graphics\graphics.cpp
 	"systems/graphics/graphics.hpp"
 
-1404510188 d:\programming\localgit\terrancommand\include\systems\graphics\graphics.hpp
+1404600900 d:\programming\localgit\terrancommand\include\systems\graphics\graphics.hpp
 	<SFML/Graphics.hpp>
 	"systems/abstract/Isystem.hpp"
 	"renderer/abstract/Irenderer.hpp"
 	"renderer/tcrenderer/renderqueue.hpp"
+	"systems/graphics/texture/texturecache.hpp"
 
 1404506472 source:d:\programming\localgit\terrancommand\source\systems\window\window.cpp
 	"systems/window/window.hpp"
@@ -879,4 +880,22 @@
 
 1404514461 source:d:\programming\localgit\terrancommand\source\systems\window\eventhandler\windoweventhandler\windoweventhandler.cpp
 	"systems/window/eventhandler/windoweventhandler/windoweventhandler.hpp"
+
+1404612487 source:d:\programming\localgit\terrancommand\source\systems\graphics\texture\texturecache.cpp
+	"systems/graphics/texture/texturecache.hpp"
+
+1404611672 d:\programming\localgit\terrancommand\include\systems\graphics\texture\texturecache.hpp
+	<assert.h>
+	<unordered_map>
+	<memory>
+	<iostream>
+	<SFML/Graphics.hpp>
+	"systems/graphics/texture/texturemetadata.hpp"
+
+1404610482 d:\programming\localgit\terrancommand\include\systems\graphics\texture\texturemetadata.hpp
+	<string>
+	<SFML/Graphics.hpp>
+
+1404605673 source:d:\programming\localgit\terrancommand\source\systems\graphics\texture\texturemetadata.cpp
+	"systems/graphics/texture/texturemetadata.hpp"
 
