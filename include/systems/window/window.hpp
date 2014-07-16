@@ -3,14 +3,13 @@
 
 #include <memory>
 #include <SFML/Window.hpp>
-#include "systems/abstract/Isystem.hpp"
 #include "eventhandler/windoweventhandler/windoweventhandler.hpp"
 
 namespace tc
 {
     namespace sys
     {
-        class Window : public tc::sys::ISystem
+        class Window
         {
         public:
             Window(std::unique_ptr<sf::RenderWindow> w);

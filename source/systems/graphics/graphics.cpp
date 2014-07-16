@@ -4,6 +4,7 @@ tc::sys::Graphics::Graphics(std::unique_ptr<tc::IRenderer> r)
 :
     renderer(std::move(r))
 {
+    ///////// TEMPORARY texture loading area ////////////////////////////////////////////
     textureCache.LoadFromFile("./resources/texture/background/bg0.jpg");
     for(int i = 0; i < 10; i ++)
     {
@@ -12,12 +13,20 @@ tc::sys::Graphics::Graphics(std::unique_ptr<tc::IRenderer> r)
         path += ".png";
         textureCache.LoadFromFile(path);
     }
-}
+    //////////////////////////////////////////////////////////////////////////////////////
 
-void tc::sys::Graphics::Update()
-{
-    //Render();
-    //Display();
+    //////// TEMPORARY add some things to the allDrawables vector ////////////////////////
+    std::unique_ptr<tc::Sprite> background(new tc::Sprite);
+    background->material.SetTexture( textureCache.Get(0) );
+    allDrawables.push_back( std::move (background) );
+    /*for(int i = 0; i < 9; ++i)
+    {
+        std::unique_ptr<tc::Sprite> gort(new tc::Sprite);
+        gort->sprite.setPosition(sf::Vector2f((i*75)+100, 250));
+        gort->sprite.setTexture(textureCache.Get(i+2));
+        allDrawables.push_back( std::move(gort) );
+    }*/
+    //////////////////////////////////////////////////////////////////////////////////////
 }
 
 void tc::sys::Graphics::Display(sf::RenderWindow &rW) const
@@ -25,26 +34,11 @@ void tc::sys::Graphics::Display(sf::RenderWindow &rW) const
     rW.display();
 }
 
-void tc::sys::Graphics::Render(sf::RenderTarget &rT) const
+void tc::sys::Graphics::Draw(sf::RenderTarget &rT)
 {
-    renderer->Render(opaque, rT);
-    renderer->Render(translucent, rT);
+    opaque.Sort();
+    translucent.Sort();
 
-
-    ////////////////////////////////////////////////////////////////
-    /////////////////////// testing code ///////////////////////////
-    ////////////////////////////////////////////////////////////////
-    sf::Sprite bort;
-    sf::Sprite nort[9];
-    bort.setTexture(textureCache.Get(0));
-    rT.draw(bort);
-
-    for(int i = 0; i < 9; ++i)
-    {
-        nort[i].setPosition(sf::Vector2f((i*75)+100, 250));
-        nort[i].setTexture(textureCache.Get(i+2));
-        rT.draw(nort[i]);
-    }
-    //////////////////////////////////////////////////////////////
-
+    renderer->Draw(opaque, allDrawables, rT);
+    renderer->Draw(translucent, allDrawables, rT);
 }

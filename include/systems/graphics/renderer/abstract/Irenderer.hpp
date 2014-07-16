@@ -10,7 +10,9 @@ namespace tc
     class IRenderer : sf::NonCopyable
     {
     public:
-        virtual void Render(const IRenderQueue &renderQueue, sf::RenderTarget &rt) const = 0;
+        virtual void Draw(const tc::IRenderQueue &renderQueue,
+                          const std::vector<std::unique_ptr<sf::Drawable> > &renderBucket,
+                          sf::RenderTarget &rt) const = 0;
     };
 }
 

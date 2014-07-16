@@ -13,7 +13,9 @@ namespace tc
     class Renderer : public tc::IRenderer
     {
     public:
-        void Render(const tc::IRenderQueue &renderQueue, sf::RenderTarget &rt) const;
+        void Draw(const tc::IRenderQueue &renderQueue,
+                  const std::vector<std::unique_ptr<sf::Drawable> > &renderBucket,
+                    sf::RenderTarget &rt) const;
         static std::unique_ptr<tc::Renderer> Factory();
     };
 }

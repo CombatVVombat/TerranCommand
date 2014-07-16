@@ -1,14 +1,19 @@
 #ifndef RENDERQUEUE_HPP_INCLUDED
 #define RENDERQUEUE_HPP_INCLUDED
 
-#include "systems/graphics/renderer/tcrenderer/renderitem.hpp"
+#include <algorithm>
+#include "systems/graphics/renderer/tcrenderer/queueItem.hpp"
+#include "systems/graphics/renderer/abstract/IrenderQueue.hpp"
 
 namespace tc
 {
     class RenderQueue : public tc::IRenderQueue
     {
+    public:
+        void Sort();
+
     private:
-        std::vector<tc::RenderItem> renderItems;
+        std::vector<tc::QueueItem> renderItems;
     };
 }
 

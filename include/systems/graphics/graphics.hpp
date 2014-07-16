@@ -2,8 +2,8 @@
 #define GRAPHICS_HPP_INCLUDED
 
 #include <SFML/Graphics.hpp>
-#include "systems/abstract/Isystem.hpp"
 #include "renderer/abstract/Irenderer.hpp"
+#include "systems/graphics/drawable/sprite.hpp"
 #include "renderer/tcrenderer/renderqueue.hpp"
 #include "systems/graphics/texture/texturecache.hpp"
 
@@ -11,19 +11,25 @@ namespace tc
 {
     namespace sys
     {
-        class Graphics : public tc::sys::ISystem
+        class Graphics
         {
         public:
+        ////////// Methods ////////////////////////////////////////////////
             Graphics(std::unique_ptr<tc::IRenderer> r);
-            void Update();
             void Display(sf::RenderWindow &rW) const;
-            void Render(sf::RenderTarget &rT) const;
+            void Draw(sf::RenderTarget &rT);
+        ///////////////////////////////////////////////////////////////////
 
+        ////////// Members ////////////////////////////////////////////////
         private:
             std::unique_ptr<tc::IRenderer> renderer;
+
+            std::vector<std::unique_ptr<sf::Drawable> > allDrawables;   // probably temporary
+
             tc::TextureCache textureCache;
             tc::RenderQueue opaque;
             tc::RenderQueue translucent;
+        ////////////////////////////////////////////////////////////////////
         };
     }
 }

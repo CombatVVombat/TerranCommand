@@ -1,124 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="include\systems\window\window.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="306" topLine="0" />
-		</Cursor>
-	</File>
 	<File name="include\systems\window\eventhandler\windoweventhandler\windoweventhandler.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="131" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\systems\graphics\graphics.hpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="279" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="source\game\world.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="source\systems\graphics\renderer\tcrenderer\renderer.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="303" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\systems\graphics\renderer\abstract\IrenderQueue.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="209" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="source\systems\graphics\renderer\tcrenderer\renderitem.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="241" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\systems\abstract\Isystem.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="195" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="source\systems\graphics\renderer\tcrenderer\sortkey.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="165" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\systems\graphics\texture\texturecache.hpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="380" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="source\systems\graphics\texture\texturecache.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1705" topLine="25" />
-		</Cursor>
-	</File>
-	<File name="include\systems\graphics\renderer\tcrenderer\renderer.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="237" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="source\systems\window\eventhandler\abstract\Ieventhandler.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="69" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\systems\graphics\renderer\tcrenderer\renderitem.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="144" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="source\systems\window\eventhandler\windoweventhandler\windoweventhandler.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="511" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="source\systems\window\renderwindow.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="505" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="source\main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="861" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="source\systems\window\window.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="40" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="source\engine\engine.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="201" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\systems\graphics\renderer\abstract\Irenderer.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="350" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\systems\graphics\texture\texturemetadata.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="371" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="source\systems\graphics\graphics.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="557" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="source\systems\graphics\renderer\abstract\Irenderer.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="59" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\systems\graphics\renderer\tcrenderer\renderqueue.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="271" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include\systems\window\renderwindow.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -126,9 +11,54 @@
 			<Cursor1 position="446" topLine="0" />
 		</Cursor>
 	</File>
+	<File name="include\systems\window\window.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="105" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="source\engine\engine.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="356" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="source\game\world.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="source\main.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1130" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="source\systems\graphics\graphics.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="813" topLine="11" />
+		</Cursor>
+	</File>
+	<File name="source\systems\graphics\renderer\abstract\Irenderer.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="59" topLine="0" />
+		</Cursor>
+	</File>
 	<File name="source\systems\graphics\renderer\abstract\Irenderqueue.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="64" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="source\systems\graphics\renderer\tcrenderer\queueItem.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="174" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="source\systems\graphics\renderer\tcrenderer\renderer.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="630" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="source\systems\graphics\texture\texturecache.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="502" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="source\systems\graphics\texture\texturemetadata.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -136,14 +66,114 @@
 			<Cursor1 position="181" topLine="0" />
 		</Cursor>
 	</File>
+	<File name="include\game\world.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="140" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="source\systems\window\eventhandler\abstract\Ieventhandler.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="69" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="source\systems\window\eventhandler\windoweventhandler\windoweventhandler.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="511" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\systems\graphics\graphics.hpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="903" topLine="15" />
+		</Cursor>
+	</File>
+	<File name="source\systems\window\renderwindow.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="505" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\systems\graphics\material\material.hpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="798" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="source\systems\window\window.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="40" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\systems\graphics\renderer\abstract\IrenderQueue.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="217" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\systems\graphics\renderer\abstract\Irenderer.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="393" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="source\systems\graphics\renderer\tcrenderer\renderQueue.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="95" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="source\systems\graphics\material\material.cpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="482" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="include\systems\graphics\drawable\drawable.hpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="529" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\systems\graphics\renderer\tcrenderer\queueItem.hpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="330" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\systems\graphics\renderer\tcrenderer\renderer.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="576" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\systems\graphics\renderer\tcrenderer\renderqueue.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="329" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\systems\graphics\renderer\tcrenderer\sortKey.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="83" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="source\systems\graphics\drawable\sprite.cpp" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="414" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="include\systems\graphics\texture\texture.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="354" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\systems\graphics\texture\texturecache.hpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="741" topLine="5" />
+		</Cursor>
+	</File>
+	<File name="include\systems\graphics\drawable\sprite.hpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="432" topLine="3" />
+		</Cursor>
+	</File>
 	<File name="include\engine\engine.hpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="153" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\game\world.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\systems\graphics\texture\texturemetadata.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="140" topLine="0" />
+			<Cursor1 position="562" topLine="6" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

@@ -9,6 +9,9 @@ namespace tc
     {
     protected:
         IRenderQueue() {}
+
+    public:
+        virtual void Sort() = 0;
     };
 }
 

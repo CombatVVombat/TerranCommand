@@ -9,7 +9,7 @@ tc::Engine::Engine(std::unique_ptr<tc::sys::Window> wS, std::unique_ptr<tc::sys:
 
 void tc::Engine::DoSomeTemporaryShit()
 {
-    graphicsSystem->Render(windowSystem->GetWindow());      // draws to the target
+    graphicsSystem->Draw(windowSystem->GetWindow());      // draws to the target
     graphicsSystem->Display(windowSystem->GetWindow());     // displays what was drawn
     windowSystem->Update();
 }

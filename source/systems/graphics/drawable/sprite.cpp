@@ -1,0 +1,62 @@
+#include "systems/graphics/drawable/sprite.hpp"
+
+////////////////////////////////////////////////////////////////////
+tc::Sprite::Sprite()
+{
+    material.SetTextureRect(sf::IntRect());
+}
+////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////
+tc::Sprite::Sprite(const tc::Texture &tex)
+{
+    material.SetTexture(tex);
+}
+////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////
+tc::Sprite::Sprite(const tc::Texture &tex, const sf::IntRect &rect)
+{
+    material.SetTexture(tex);
+    material.SetTextureRect(rect);
+}
+////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////
+void tc::Sprite::UpdateVertices()
+{
+    sf::FloatRect bounds = GetLocalBounds();
+
+    vertices[0].position = sf::Vector2f(0, 0);
+    vertices[1].position = sf::Vector2f(0, bounds.height);
+    vertices[2].position = sf::Vector2f(bounds.width, 0);
+    vertices[3].position = sf::Vector2f(bounds.width, bounds.height);
+}
+////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////
+void tc::Sprite::draw(sf::RenderTarget &target, sf::RenderStates states) const
+{
+    if ( material.GetTexture() )
+    {
+        states.transform *= transform;
+        states.texture = material.GetTexture();
+        target.draw(vertices, 4, sf::TrianglesStrip, states);
+    }
+}
+////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////
+sf::FloatRect tc::Sprite::GetLocalBounds() const
+{
+    float width = static_cast<float>(std::abs(material.texRect.width));
+    float height = static_cast<float>(std::abs(material.texRect.height));
+
+    return sf::FloatRect(0.f, 0.f, width, height);
+}
+////////////////////////////////////////////////////////////////////
